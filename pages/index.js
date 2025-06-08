@@ -98,7 +98,7 @@ export default function Home() {
   return (
     <>
       <div style={styles.container}>
-        <h1 style={styles.title}>Your AI Girlfriend</h1>
+        <h1 style={styles.title}>Your AI JOWA</h1>
         <div style={styles.chatBox}>
           {messages.map((msg, idx) => (
             <div
