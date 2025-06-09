@@ -217,7 +217,9 @@ export default function Home() {
             <label>Nationality</label> &nbsp;
             <Dropdown className={styles.selection} value={config?.nationality} options={nationalities} optionLabel='text' optionValue='value'
               onChange={(e) => handleValueChange('nationality', e.value)} /> &nbsp;
-            <label>Partner Gender</label> &nbsp;
+            <label>Partner Gender</label>
+            <br />
+            <br />
             <Dropdown className={styles.selection} value={config?.gender} options={genders} optionLabel='text' optionValue='value'
               onChange={(e) => handleValueChange('gender', e.value)} /> &nbsp;
             <br />
@@ -235,7 +237,6 @@ export default function Home() {
             <label>Your Zodiac</label> &nbsp;
             <Dropdown className={styles.selection} value={config?.user_zodiac} options={zodiacSigns} optionLabel='text' optionValue='value'
               onChange={(e) => handleValueChange('user_zodiac', e.value)} /> &nbsp;
-
           </div>
         )}
 
@@ -265,7 +266,13 @@ export default function Home() {
             style={styles.input}
           />
           <button onClick={sendMessage} style={styles.button}>Send</button>
+          <br />
+          <div className={styles.inputContainer}>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2458323252730734"
+              crossorigin="anonymous"></script>
+          </div>
         </div>
+
       </div>
     </>
   );
