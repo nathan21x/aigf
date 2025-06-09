@@ -217,9 +217,9 @@ export default function Home() {
             <label>Nationality</label> &nbsp;
             <Dropdown className={styles.selection} value={config?.nationality} options={nationalities} optionLabel='text' optionValue='value'
               onChange={(e) => handleValueChange('nationality', e.value)} /> &nbsp;
+            <br />
+            <br />
             <label>Partner Gender</label>
-            <br />
-            <br />
             <Dropdown className={styles.selection} value={config?.gender} options={genders} optionLabel='text' optionValue='value'
               onChange={(e) => handleValueChange('gender', e.value)} /> &nbsp;
             <br />
