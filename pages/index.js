@@ -267,12 +267,11 @@ export default function Home() {
           />
           <button onClick={sendMessage} style={styles.button}>Send</button>
           <br />
-          <div className={styles.inputContainer}>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2458323252730734"
-              crossorigin="anonymous"></script>
-          </div>
         </div>
-
+        <div className={styles.inputContainer}>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2458323252730734"
+            crossorigin="anonymous"></script>
+        </div>
       </div>
     </>
   );
