@@ -128,9 +128,8 @@ export default function Home() {
     fetch('https://ai-assistant-fawn-nine.vercel.app/api/ask_api', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ user_id: userId, question: input, config }),
+      body: JSON.stringify({ user_id: userId, question: input, config: config }),
     }).then(async (res) => {
-      console.log(res);
       res.json().then((data) => {
         setMessages([...newMessages, { role: 'assistant', content: data.reply }]);
       })
@@ -270,7 +269,7 @@ export default function Home() {
         </div>
         <div className={styles.inputContainer}>
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2458323252730734"
-            crossorigin="anonymous"></script>
+            crossOrigin="anonymous"></script>
         </div>
       </div>
     </>
